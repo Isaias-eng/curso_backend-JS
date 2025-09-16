@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       <script>
+        num1 = parseInt(prompt("Insira um número inteiro: "));
+        
+        cal = num1 % 2;
+
+        if (cal == 0){
+            if (num1 >= 0){
+                document.write(num1 + " é par e positivo.");
+            } else if (num1 < 0){
+                document.write(num1 + " é par e negativo.");
+            }
+        } else if(cal != 0){
+            if(num1 >= 0){
+                document.write(num1 + " é impar e positivo.");
+            }else if (num1 < 0){
+                document.write(num1 + " é impar e negativo.");
+            } else{
+                document.writeln("Algo deu errado.");
+            }
+        }
+       </script> 
+    </body>
+</html>

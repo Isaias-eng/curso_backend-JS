@@ -1,0 +1,36 @@
+<html>
+    <head>
+       
+        <title>Estruturas Condicionais</title>
+        
+    </head>
+
+    <body>
+
+    </body>
+    <script>
+        document.write("Vou à lanchonete.<br>");
+        document.write(" -Quero um lanche por favor.<br>");
+        document.write(" -Custa 10 reais.<br>");
+
+        let dinheiro = parseFloat("iio");
+        let preco = parseFloat(10.0);
+
+        if (dinheiro < preco){
+            document.write(" -Não tenho dinheiro suficiente.<br>");
+
+        } else if (dinheiro == preco) {
+            document.write(" -Aqui o dinheiro, obrigado.<br>");
+
+        } else if( dinheiro > preco) {
+            document.write(" -Aqui o dinheiro, o troco por favor.<br>");
+            troco = dinheiro - preco;
+            document.write(" -Aqui está seu troco de " + troco + " reais.<br>");    
+
+        } else {
+            document.write("Deu algo errado.<br>");
+        }
+       
+        document.write("<br>Dinheiro: " + dinheiro + "<br>")
+    </script>
+</html>

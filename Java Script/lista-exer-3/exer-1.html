@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h1>Vetores</h1>
+    </head>
+    <body>
+        <script>
+            var vetor1 = [];
+            var vetor2 = [];
+            var vetor3 = [];
+            let soma = parseInt(0);
+            let svet = parseInt(0);
+            let svet2 = parseInt(0);
+
+            for(let i=0; i<50;i++){
+                vetor1[i] = i+1;
+                vetor2[i] = (i+1)*2;
+
+                vetor3[i] = vetor1[i] + vetor2[i];
+
+                svet += vetor1[i];
+                svet2 += vetor2[i];
+            }
+             soma = svet + svet2;
+            document.writeln(vetor1+"<br>");
+            document.writeln(vetor2+"<br>");
+            document.writeln(soma+"<br>");
+            document.writeln(vetor3+"<br>");
+
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            v1 = parseFloat(prompt("Primeiro valor: "));
+            v2 = parseFloat(prompt("Segundo valor: "));
+            v3 = parseFloat(prompt("Terceiro valor: "));
+
+            if(v1 > v2 && v1 > v3){
+                media = (v1*5 + v2*2.5 + v3*2.5)/(5+2.5+2.5);
+                document.writeln("O valor da média é: ", media);
+            } else if(v2 > v1 && v2 > v3){
+                media = (v1*2.5 + v2*5 + v3*2.5)/(5+2.5+2.5);
+                document.writeln("O valor da média é: ", media);
+            }else if(v3>v1 && v3 >v2){
+                media = (v1*2.5 + v2*2.5 + v3*5)/(5+2.5+2.5);
+                document.writeln("O valor da média é: ", media);
+            }else{
+                document.writeln("Algo deu errado.")
+            }
+        </script>
+    </body>
+</html>

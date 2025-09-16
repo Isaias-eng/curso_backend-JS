@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let i = parseInt(1);
+            let z = parseFloat(0);
+
+            while (i<((9999999999999/2)+1)){
+                if(i%2 != 0){
+                    z += 4/(i*2-1);
+                }else{
+                    z -= 4/(i*2-1);
+                }
+                i++;
+            }
+            document.writeln(z);
+            
+        </script>
+    </body>
+</html>

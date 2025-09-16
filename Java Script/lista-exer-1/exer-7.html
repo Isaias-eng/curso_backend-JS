@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <script>
+        vendedor = parseInt(prompt("Número do vendedor: "));
+        salario = parseFloat(prompt("Salario do vendedor: "));
+        vendas = parseFloat(prompt("Total de vendas: "));
+
+        if(vendas <= 10000){
+
+            comissao = vendas * 0.03;
+            salarioTotal = comissao + salario;
+            document.writeln("Vendedor número: ", vendedor,"<br>");
+            document.writeln("Total de vendas: ", vendas,"<br>");
+            document.writeln("Salário fixo: ", salario,"<br>");
+            document.writeln("Salário total: ", salarioTotal,"<br>");
+
+        } else if(vendas > 10000){
+            comissao = 10000 * 0.03 + ((vendas - 10000)*0.05);
+            salarioTotal = comissao + salario;
+            document.writeln("Vendedor número: ", vendedor,"<br>");
+            document.writeln("Total de vendas: ", vendas,"<br>");
+            document.writeln("Salário fixo: ", salario,"<br>");
+            document.writeln("Salário total: ", salarioTotal,"<br>");
+
+        } else{
+            document.writeln("Algo deu errado.")
+        }
+
+    </script>    
+    
+    </body>
+
+    </html>

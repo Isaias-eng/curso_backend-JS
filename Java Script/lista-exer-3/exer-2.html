@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            function gerarAleatorio(qtd,intervalo){
+                vetor = [];
+                for (i=0;i<qtd;i++){
+                    vetor[i] = Math.floor(Math.random()*intervalo)+1;
+                        }
+                return vetor;
+                }
+
+        vetor = gerarAleatorio(100, 1000);
+        document.writeln(vetor);
+
+        </script>
+
+    </body>
+</html>
